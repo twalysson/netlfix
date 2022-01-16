@@ -1,0 +1,103 @@
+/* elementos config*/
+
+:root{
+    --vermelho: red;
+    --preto: black;
+}
+
+body{
+    color: white;
+    background-color: var(--preto);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/* filme principal */
+
+.filme1{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("/img/foto.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme1 .description{
+    padding-bottom: 25px;
+}
+
+.filme1 .titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif-;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+
+.filme1 .botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-size: 12px;
+    transition: .5s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.filme1 .botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 3px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+
+.filme1 .container{
+    width: 70%;
+}
+
+.box-size{
+    width: 50px;
+    height: 250px;
+}
+
+.carousel-filmes{
+    margin-top: 7px;
+}
